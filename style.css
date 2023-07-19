@@ -27,6 +27,21 @@ body {
   border: none;
 }
 
+.footer-container{
+  margin-bottom: 200px;
+}
+.list > li{
+  color: #ffffff;
+  list-style: none;
+}
+.list-icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
 /* header section */
 
 header {
@@ -142,9 +157,11 @@ h1 {
 
 .we-are-gamer {
   background-color: rgba(249, 243, 249, 0.893);
+  margin: 0px auto;
 }
 .we-are-gamer-container {
   max-width: 1440px;
+  margin: 0 auto;
   display: flex;
 }
 .we-are-gamer-img-container {
@@ -183,6 +200,155 @@ text-overflow: ellipsis;
 .we-are-gamer-img {
   width: 100%;
 }
+
+
+
+/* Online games section */
+
+
+
+.on-line-games-container{
+  max-width: 1440px;
+  margin: 70px auto;
+  text-align: center;
+}
+.on-line-games-card-container{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+.on-line-games-heading{
+  font-size: 45px;
+  color: #0b0223;
+  font-weight: 700;
+}
+.common-rainbow-text{
+  background-image: linear-gradient(to bottom, #f948b2 0%, #8758f1 100%);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+.on-line-games-description{
+color: #534C64;
+font-size: 18px;
+font-weight: 400;
+margin: 20px 0 30px;
+}
+.on-line-games-card{
+  width: 300px;
+  height: 400px;
+  text-align: left;
+}
+.card-container{
+  width: 300px;
+  height: 400px;
+  text-align: left;
+  position: relative;
+}
+
+
+
+.on-line-games-card-img{
+  width: 100%;
+}
+
+
+/* image overlap section */
+
+
+.overlap-text-container{
+  max-width: 350px;
+  margin-left: 220px;
+}
+.overlap-text-title{
+  font-size: 42px;
+  color: #0b0223;
+  font-weight: 700;
+}
+.overlap-text-description{
+margin-top: 30px;
+}
+
+.overlap-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1440px;
+  height: 550px;
+  margin: 0 auto;
+}
+.overlap-image-first{
+  width: 450px;
+border-radius: 10px;
+background-image: url('./images/Rectangle\ 55.png');
+background-size: cover;
+margin-left: 300px;
+}
+.overlap-image-second{
+  width: 450px;
+  height: 500px;
+  border: 2px solid white;
+  border-radius: 10px;
+  background-image: url('./images/Rectangle\ 66.png');
+  background-size: cover;
+  transform: scale(.40) translate(-550px, 550px);
+}
+
+
+/* button section */
+
+
+.button-section{
+margin: 50px auto 30px;
+background-color: rgba(249, 243, 249, 0.893);
+}
+.button-container{
+  margin: 0 auto;
+  max-width: 1440px;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+align-items: center;
+}
+.icon-btn{
+  width: 250px;
+  height: 70px;
+  border-radius: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: none;
+}
+
+/* footer section */
+
+.footer-section{
+  background-color: #0b0223;
+  margin: 0 auto;
+}
+.footer-container{
+  max-width: 1440px;
+  height: 400px;
+}
+.f-h3{
+  font-size: 45px;
+  color: white;
+  font-weight: 700;
+}
+.f-tital{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ padding-top: 40px;
+}
+.list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top:30px ;
+}
+
 
 /* Media Responsive Section */
 
@@ -233,7 +399,7 @@ text-overflow: ellipsis;
     text-align: center;
     margin: 0 auto;
   }
-  ..we-are-gamer-container{
+  .we-are-gamer-container{
     width: auto;
     margin: 0 auto;
   }
@@ -243,7 +409,19 @@ margin: 0 auto;
   text-align: center;
   white-space:normal;
   overflow: visible;
-
+  }
+  .overlap-container{
+    flex-direction: column;
+  }
+  .overlap-image-second{
+    transform: translateY(600px);
+  }
+  .overlap-image-first{
+    margin-left: 0px;
+  }
+  .overlap-text-container{
+    margin-left: 0px;
+    margin-top: 30px;
   }
 
 }
