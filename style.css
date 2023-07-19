@@ -4,23 +4,41 @@
   margin: 0px;
   padding: 0px;
 }
+body {
+  margin: 0 auto;
+}
 
 /* Common Style Section */
-.common-text-tital {
+.common-header-tital {
   font-size: 45px;
+  color: #0b0223;
+  font-weight: 700;
+}
+.common-text-color {
+  color: #ff42a5;
+}
+.common-btn {
+  padding: 20px 40px;
+  font-size: 18px;
+  gap: 10px;
+  border-radius: 48px;
+  background-color: #ff42a5;
+  color: #ffffff;
+  border: none;
 }
 
 /* header section */
+
 header {
   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
 }
-.container{
-    max-width: 1440px;
-    min-height: 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
+.container {
+  max-width: 1440px;
+  min-height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
 }
 nav {
   display: flex;
@@ -44,7 +62,6 @@ nav > li .nav-btn {
   align-items: center;
   justify-content: center;
 }
-
 .fa-brands {
   margin-left: 10px;
   font-size: 20px;
@@ -56,4 +73,177 @@ nav > li .nav-btn {
 }
 #nav-tital {
   margin-left: 30px;
+}
+/* Header section end */
+
+/* Banner section start */
+
+.banner-background-img {
+  background-image: url("./images/Group\ 14.png");
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.banner-container {
+  max-width: 1440px;
+  min-height: 700px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding-right: 40px;
+}
+.banner-text-container {
+  width: 50%;
+  height: 100%;
+  align-items: center;
+  padding-left: 40px;
+}
+.banner-img-container {
+  max-width: 50%;
+  height: 100%;
+}
+.banner-img {
+  width: 100%;
+  height: 100%;
+}
+.banner-text-container > li {
+  list-style: none;
+  color: #534c64;
+  font-size: 20px;
+  font-weight: 500;
+}
+h2 {
+  color: #0b0223;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 500;
+}
+h1 {
+  font-size: 6rem;
+  font-style: normal;
+  font-weight: 800;
+  background-image: linear-gradient(to bottom, #f948b2 0%, #8758f1 100%);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+.btn-blue {
+  padding: 20px 40px;
+  border-radius: 48px;
+  background: #4ec5f7;
+  color: #ffffff;
+  border: none;
+  font-size: 18px;
+}
+.fa-solid,
+.fa-regular {
+  margin-right: 10px;
+}
+
+/* We are gamer section */
+
+.we-are-gamer {
+  background-color: rgba(249, 243, 249, 0.893);
+}
+.we-are-gamer-container {
+  max-width: 1440px;
+  display: flex;
+}
+.we-are-gamer-img-container {
+  width: 60%;
+}
+.we-are-game-text-container {
+  width: 40%;
+  text-align: right;
+}
+.we-are-gamer-tital {
+  font-size: 48px;
+  background-image: linear-gradient(to bottom, #f948b2 0%, #8758f1 100%);
+  color: transparent;
+  -webkit-background-clip: text;
+  font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.we-are-gamer-description {
+  color: #534c64;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.epclip{
+  margin-top: 20px;
+width: 110px;
+margin-left: 470px;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+.unlesh-the-game-description{
+  margin-top: 10px;
+}
+.we-are-gamer-img {
+  width: 100%;
+}
+
+/* Media Responsive Section */
+
+@media screen and (max-width: 576px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 10px;
+  }
+  nav > li {
+    margin: 0px;
+  }
+  .navigation-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 10px;
+  }
+  #nav-tital {
+    margin: 0px auto;
+  }
+  .banner-container {
+    flex-direction: column;
+    padding: 0px;
+  }
+  .banner-text-container {
+    padding: 0px;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+  }
+  .we-are-gamer-container{
+    flex-direction: column;
+  }
+  .we-are-gamer-img-container,
+  .we-are-game-text-container{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  ..we-are-gamer-container{
+    width: auto;
+    margin: 0 auto;
+  }
+  .epclip{
+margin: 0 auto;
+  width:100%;
+  text-align: center;
+  white-space:normal;
+  overflow: visible;
+
+  }
+
 }
