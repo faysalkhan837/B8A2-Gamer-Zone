@@ -502,3 +502,19 @@ max-width: 450px;
   }
 }
 
+/* for tablet */
+@media screen and (min-width: 577px) and (max-width:960px) {
+  .overlap-text-container{
+    margin-left: 0;
+  }
+  .overlap-image-first{
+    margin-left: 0;
+    max-width: 400px;
+  }
+  .epclip{
+    margin-left: 200px;
+  }
+  .button-container{
+    margin: 70px auto 0;
+  }
+}
